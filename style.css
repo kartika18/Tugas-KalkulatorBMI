@@ -51,4 +51,5 @@ button {
   background-color: #ddb967;
   font-size: large;
   margin-bottom: 36px;
+  cursor: pointer;
 }

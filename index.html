@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,7 +11,7 @@
       <div id="checkBMI">
         <h1>Check Your BMI Now</h1>
         <p>Enter your weight and height below to check your BMI results</p>
-        <form action="">
+        <form id="bmiForm">
           <div>
             <label for="inputWeight">Put your weight in here (KG)</label>
             <input type="text" id="inputWeight" placeholder="Weight" />
@@ -20,8 +20,8 @@
             <label for="inputHeight">Put your height in here (CM)</label>
             <input type="number" id="inputHeight" placeholder="Height" />
           </div>
+          <button id="forSubmit" type="submit">Calculate BMI</button>
         </form>
-        <button id="forSubmit" type="submit">Calculate BMI</button>
         <p id="forResult"></p>
       </div>
       <div id="infoBMI">

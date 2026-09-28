@@ -1,5 +1,5 @@
-let buttonSubmit = document.getElementById("forSubmit");
-buttonSubmit.addEventListener("click", submit);
+let bmiForm = document.getElementById("bmiForm");
+bmiForm.addEventListener("submit", submit);
 
 function submit(event) {
   event.preventDefault();
@@ -24,7 +24,7 @@ function submit(event) {
     }
 
     Result.innerHTML = `Your BMI is <b>${rumusBMI.toFixed(
-      1
+      1,
     )}</b> which means you are <b>${theCategories}</b>`;
   } else {
     alert("Put weight and height first");

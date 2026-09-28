@@ -13,11 +13,11 @@ function submit(event) {
     let theCategories;
     if (rumusBMI >= 30) {
       theCategories = "Obesity";
-    } else if (rumusBMI >= 25 && rumusBMI <= 29.9) {
+    } else if (rumusBMI >= 25 && rumusBMI < 30) {
       theCategories = "Overweight";
-    } else if (rumusBMI >= 18.5 && rumusBMI <= 24.9) {
+    } else if (rumusBMI >= 18.5 && rumusBMI < 25) {
       theCategories = "Normal Weight";
-    } else if (rumusBMI <= 18.5) {
+    } else if (rumusBMI < 18.5) {
       theCategories = "Underweight";
     } else {
       console.log("Something Wrong");
